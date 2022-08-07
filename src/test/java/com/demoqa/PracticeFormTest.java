@@ -29,8 +29,8 @@ public class PracticeFormTest {
     }
 
     @AfterAll
-    static void tearDown(){
-    Selenide.closeWindow();
+    void closeDriver() {
+        Selenide.closeWebDriver();
     }
 
     @Test
