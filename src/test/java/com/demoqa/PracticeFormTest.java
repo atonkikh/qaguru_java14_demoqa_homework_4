@@ -30,12 +30,11 @@ public class PracticeFormTest {
 
     @AfterAll
     static void tearDown(){
-    Selenide.clearBrowserCookies();
+    Selenide.closeWindow();
     }
 
     @Test
-    void fillForm()
-    {
+    void fillForm() {
         open("/automation-practice-form");
         Selenide.zoom(0.80);
         $("#firstName").setValue(FirstName);
